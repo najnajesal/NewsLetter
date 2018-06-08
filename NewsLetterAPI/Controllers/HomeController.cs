@@ -11,21 +11,37 @@ namespace NewsLetterAPI.Controllers
 {
     public class HomeController : ApiController
     {
+        //[HttpGet]
+        //public List<NewsAndAnnouncement> GetNewsAndAnnouncements()
+        //{
+        //    List<NewsAndAnnouncement> lstData = new List<NewsAndAnnouncement>();
+        //    try
+        //    {
+        //        NewsAndAnnouncementHandler handler = new NewsAndAnnouncementHandler();
+        //        lstData = handler.LoadNewsAndAnnouncement();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //       ///catch
+        //    }
+        //    return lstData;
+        //}
         [HttpGet]
-        public List<NewsAndAnnouncement> GetNewsAndAnnouncements()
+        public List<TechnicalBlog> GetTechnicalBlogs()
         {
-            List<NewsAndAnnouncement> lstData = new List<NewsAndAnnouncement>();
+            List<TechnicalBlog> lstData = new List<TechnicalBlog>();
             try
             {
-                NewsAndAnnouncementHandler handler = new NewsAndAnnouncementHandler();
-                lstData = handler.LoadNewsAndAnnouncement();
+                TechnicalBlogHandler handler = new TechnicalBlogHandler();
+                lstData = handler.LoadAll();
             }
             catch (Exception ex)
             {
-               ///catch
+                ///catch
             }
             return lstData;
         }
+
     }
     
 }

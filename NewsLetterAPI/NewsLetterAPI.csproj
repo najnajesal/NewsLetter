@@ -154,13 +154,20 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="BusinessLayer\NewsAndAnnouncement\NewsAndAnnouncementHandler.cs" />
+    <Compile Include="BusinessLayer\TechnicalBlog\TechnicalBlogHandler.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DataAccessLayer\BusinessEntities\CompanyEvents.cs" />
+    <Compile Include="DataAccessLayer\BusinessEntities\EmployeeFeeds.cs" />
     <Compile Include="DataAccessLayer\BusinessEntities\NewsAndAnnouncements.cs" />
+    <Compile Include="DataAccessLayer\BusinessEntities\TechnicalBlog.cs" />
+    <Compile Include="DataAccessLayer\BusinessEntities\UserInfo.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Utilities\SQLHelper.cs" />
+    <Compile Include="Utilities\Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
