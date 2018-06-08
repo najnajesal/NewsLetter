@@ -5,14 +5,15 @@ using System.Web;
 
 namespace NewsLetterAPI.DataAccessLayer.BusinessEntities
 {
-    public class NewsAndAnnouncement
+    public class CompanyEvents
     {
         public int ID { get; set; }
         public string Title { get; set; }
-        public string Message { get; set; }
-        public UserInfo CreatedBy { get; set; }
-        public bool Published { get; set; }
-        public DateTime PublishDate { get; set; }
+        public DateTime Date { get; set; }
+        public string Description { get; set; }
+        public bool isActive { get; set; }
         public DateTime CreatedOn { get; set; }
+        public UserInfo CreatedBy { get; set; }
+        
     }
 }

@@ -16,7 +16,6 @@ namespace NewsLetterAPI.BusinessLayer
                     data.ID = i;
                     data.Title = "Title ->" + i;
                     data.Message = "Message ->" + i;
-                    data.CreatedBy = "Najna ->" + i;
                     data.Published = false;
                     data.CreatedOn = DateTime.Now;
                     data.PublishDate = DateTime.Now;
