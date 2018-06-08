@@ -22,7 +22,7 @@ namespace NewsLetterAPI.Controllers
             }
             catch (Exception ex)
             {
-               //catch
+               ///catch
             }
             return lstData;
         }
